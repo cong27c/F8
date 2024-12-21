@@ -14,9 +14,8 @@ const handleLogin = function(email, password) {
     }
     return "Thông tin đăng nhập không hợp lệ"
 }
-handleRegister("Nguyen Van ", "123456", "nguyenvana@email.com")
+handleRegister("Nguyen Van A", "123456", "nguyenvana@email.com")
 handleRegister("Nguyen Van B", "1234567", "nguyenvanb@email.com")
 console.log(data);
-
 const dataLogin = handleLogin("nguyenvanb@email.com", "1234567");
 console.log(dataLogin);
