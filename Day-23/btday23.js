@@ -34,10 +34,14 @@ const products = [
 
 const getTopProducts = function(products, top) {
     let newArray = []
+	let maxCount = 0
     for(let i = 0; i < products.length; i++) {
-        if(products[i].id <= top) {
-            newArray.push(products[i])
-        }
+      for(let item in products) {
+		if(item.price > maxCount) {
+			maxCount = item.price
+		}
+		newArray.push(products[i])
+	  }
     }
     return newArray
 }
