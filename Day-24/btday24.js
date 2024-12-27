@@ -11,6 +11,7 @@ const result = fruits.filter((item, index) => {
 let a = 0,b = 1,temp
 
 const fibonacci = function(n) {
+    n = parseInt(prompt("Nhập số phần tử (số nguyên dương):"));
     if(n <= 0 || n === "string" || !Number.isInteger(n)) {
         console.log("Số phần tử không hợp lệ");
         return
@@ -39,9 +40,10 @@ const fibonacci = function(n) {
 
 // fibonacci("abc"); // Số phần tử không hợp lệ
 
-// fibonacci(1); // 0
+fibonacci(1); // 0
 
 // fibonacci(3.2) 
 
 
 
+console.log("Lap Trinh Khong Kho!");
