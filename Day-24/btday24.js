@@ -11,24 +11,26 @@ const result = fruits.filter((item, index) => {
 let a = 0,b = 1,temp
 
 const fibonacci = function(n) {
-    n = parseInt(prompt("Nhập số phần tử (số nguyên dương):"));
+    n = parseFloat(prompt("Nhập số phần tử (số nguyên dương):"));
     if(n <= 0 || n === "string" || !Number.isInteger(n)) {
         console.log("Số phần tử không hợp lệ");
         return
     }
     if(n === 1) {
-        console.log(0);
+        console.log(a);
         return
     } 
     for (let i = 1; i < n; i++) {
         console.log(a);
         temp = a + b;
-        a = b;
+        a = b
         b = temp;
     }
     console.log(a);
 }
 
+
+// fibonacci(9)
 
 // fibonacci(5); // 0 1 1 2 3
 
@@ -40,10 +42,6 @@ const fibonacci = function(n) {
 
 // fibonacci("abc"); // Số phần tử không hợp lệ
 
-fibonacci(1); // 0
+// fibonacci(1); // 0
 
-// fibonacci(3.2) 
-
-
-
-console.log("Lap Trinh Khong Kho!");
+fibonacci(2) 

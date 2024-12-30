@@ -83,27 +83,28 @@
 // console.log(arr1.sort((a, b) => b - a));
 // console.log(arr1.sort((a, b) => a - b ));
 
-const students = [
-    {id:1, fullname: "Le Van Minh", age: 28, address: "Nghe An"},
-    {id:2, fullname: "Hoang Quang Thang", age: 18, address: "Vinh Phuc"},
-    {id:3, fullname: "Kieu Minh Tue", age: 21, address: "Vinh Phuc"},
-    {id:3, fullname: "Nguyen Van Cong", age: 18, address: "HaNoi"},
-]
+// const students = [
+//     { id: 1, fullname: "Le Van Minh", age: 28, address: "NgheAn" },
+//     { id: 2, fullname: "Hoang Quang Thang", age: 18, address: "VinhPhuc" },
+//     { id: 6, fullname: "Nguyen Van Anh Cong", age: 22, address: "HaNoi" },
+//     { id: 3, fullname: "Kieu Minh Tue", age: 21, address: "VinhPhuc" },
+//     { id: 4, fullname: "Nguyen Van Cong", age: 18, address: "HaNoi" },
+//     { id: 5, fullname: "Nguyen Minh Cong", age: 18, address: "HaNoi" },
+//     ];
 
-// const tuoitangdan = students.sort((a, b) => {
-//     return a.age - b.age
-// })
-// console.log(tuoitangdan);
+
 
 // const sortbyName = function(data) {
-//     for(let i = 0; i < data.length; i++) {
-//         const arrFullname = data[i].fullname.split(" ")
-//        console.log(arrFullname.slice(-1));
-//        const tencuoi = arrFullname.slice(-1)
-   
-      
-
-//     }
+//     data.sort((a, b) => {
+//         let aFullName = a.fullname.split(" ")
+//         let bFullName = b.fullname.split(" ")
+//         let aFirstName = aFullName.pop()
+//         let bFirstName = bFullName.pop()
+//         if(aFirstName < bFirstName) return -1
+//         if(aFirstName > bFirstName) return 1
+//         if(aFullName.join(" ") > bFullName.join(" ")) return 1
+//         if(aFullName.join(" ") < bFullName.join(" ")) return -1
+//     })
 // }
-
 // sortbyName(students)
+// console.log(students);
