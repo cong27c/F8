@@ -1,17 +1,17 @@
 //Phương thức filter2()
-// Array.prototype.filter2 = function (callback, thisArg) {
-//     const length = this.length;
-//     const result = [];
+Array.prototype.filter2 = function (callback, thisArg) {
+    const length = this.length;
+    const result = [];
 
-//     for (let i = 0; i < length; i++) {
-//         if (i in this) {
-//             if (callback.call(thisArg, this[i], i, this)) {
-//                 result.push(this[i]);
-//             }
-//         }
-//     }
-//     return result;
-// };
+    for (let i = 0; i < length; i++) {
+        if (i in this) {
+            if (callback.call(thisArg, this[i], i, this)) {
+                result.push(this[i]);
+            }
+        }
+    }
+    return result;
+};
 
 // const arr = [1, 2, 3, 4, 5];
 // const resultFilter2 = arr.filter2((value) => {
@@ -22,17 +22,17 @@
 
 
 // // Phương thức map2()
-// Array.prototype.map2 = function (callback, thisArg) {
-//     const length = this.length;
-//     const result = new Array(length);
+Array.prototype.map2 = function (callback, thisArg) {
+    const length = this.length;
+    const result = new Array(length);
 
-//     for (let i = 0; i < length; i++) {
-//         if (i in this) {
-//             result[i] = callback.call(thisArg, this[i], i, this);
-//         }
-//     }
-//     return result;
-// };
+    for (let i = 0; i < length; i++) {
+        if (i in this) {
+            result[i] = callback.call(thisArg, this[i], i, this);
+        }
+    }
+    return result;
+};
 
 // const arr1 = [1, 2, 3, 4, 5];
 // const result1 = arr1.map2((value) => value * 2);
@@ -50,25 +50,6 @@
 
 
 //Phương thức reduce2()
-
-// Array.prototype.reduce2 = function(callback, initialValue) {
-//     if (initialValue === undefined) {
-//         if (this.length) initialValue = this[0];
-//         else throw new Error("Error: Reduce of empty array with no initial value");
-//       }
-
-//     for(let i = 0 ; i < this.length; i++){
-//         if(i in this){
-//             initialValue = callback.call(initialValue, this[i],i, this);
-//         }
-//     }
-//     return initialValue
-
-
-// }
-
-
-
 
 Array.prototype.reduce2 = function (callback, initialValue) {
 
